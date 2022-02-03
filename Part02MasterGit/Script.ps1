@@ -29,8 +29,8 @@ git remote show origin
 #Can replace --global with --local to set values for a specific repo if required
 git config --global --list    #care about username and email
 
-git config --global user.name "John Savill"
-git config --global user.email john@savilltech.com
+git config --global user.name "CK Fernando"
+git config --global user.email ckavinda@gmail.com
 
 git config --list --show-origin      #see where coming from :q
 git config --list
@@ -93,7 +93,7 @@ git cat-file -p <new tree pointed from new commit>
 #Our main reference also now points to the new commit, it just moved along
 
 #I'm going to go ahead and create a function for my nice git log command. This may vary based on your CLI
-function gitgraph {git log --oneline --graph --decorate --all}
+function gitgraph { git log --oneline --graph --decorate --all }
 #Could add this to your profile
 code $profile
 
@@ -584,7 +584,7 @@ git remote -v
 #Now we have Clarks origin and John's upstream
 #Could pull from John, e.g.
 git fetch upstream
-function gitgraph {git log --oneline --graph --decorate --all}
+function gitgraph { git log --oneline --graph --decorate --all }
 gitgraph
 git branch branch1
 git switch branch1
